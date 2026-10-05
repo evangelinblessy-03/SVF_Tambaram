@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVF Royal & Orchid, Tambaram | Premium Apartments in Chennai</title>
+  <meta name="description" content="SVF Royal & Orchid in Tambaram, Chennai. 100% Vaastu compliant, modern architecture, spacious apartments near schools, hospitals, and shopping. Enquire now!">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:wght@400;700&family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       INTRO SCREEN
+  ══════════════════════════════════════════ -->
+  <div id="introScreen">
+    <!-- floating gold particles (JS will animate these) -->
+    <div class="intro-particle" style="left:10%; animation-duration:8s;  animation-delay:0s;   width:3px; height:3px;"></div>
+    <div class="intro-particle" style="left:25%; animation-duration:11s; animation-delay:1s;   width:5px; height:5px;"></div>
+    <div class="intro-particle" style="left:40%; animation-duration:7s;  animation-delay:2.5s; width:3px; height:3px;"></div>
+    <div class="intro-particle" style="left:55%; animation-duration:9s;  animation-delay:0.5s; width:4px; height:4px;"></div>
+    <div class="intro-particle" style="left:70%; animation-duration:12s; animation-delay:1.8s; width:3px; height:3px;"></div>
+    <div class="intro-particle" style="left:85%; animation-duration:8s;  animation-delay:3s;   width:5px; height:5px;"></div>
+    <div class="intro-particle" style="left:18%; animation-duration:10s; animation-delay:4s;   width:2px; height:2px;"></div>
+    <div class="intro-particle" style="left:62%; animation-duration:6s;  animation-delay:2s;   width:4px; height:4px;"></div>
+    <div class="intro-particle" style="left:90%; animation-duration:9s;  animation-delay:0.8s; width:3px; height:3px;"></div>
+    <div class="intro-particle" style="left:47%; animation-duration:13s; animation-delay:5s;   width:2px; height:2px;"></div>
+
+    <div class="intro-content">
+      <p class="intro-sub">Welcome to</p>
+      <h1 class="intro-title">SVF Royal &amp; Orchid</h1>
+      <div class="intro-divider"></div>
+      <p class="intro-location"><i class="fas fa-map-marker-alt"></i> Tambaram, Chennai</p>
+      <p class="intro-tagline">Premium Apartments — Built with Care &amp; Honesty</p>
+
+      <div class="intro-stats">
+        <div class="intro-stat">
+          <strong>17+</strong>
+          <span>Years Experience</span>
+        </div>
+        <div class="intro-stat-sep"></div>
+        <div class="intro-stat">
+          <strong>400+</strong>
+          <span>Happy Clients</span>
+        </div>
+        <div class="intro-stat-sep"></div>
+        <div class="intro-stat">
+          <strong>4L+</strong>
+          <span>Sq Ft Delivered</span>
+        </div>
+      </div>
+
+      <button id="enterBtn">Explore Now <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       HUB PAGE
+  ══════════════════════════════════════════ -->
+  <div id="hubPage" class="hub-hidden">
+<div class="page" id="homePage">
+  <div class="hero-bg" id="heroBg">
+    <img src="images/home.jpeg" alt="SVF Royal and Orchid apartment building">
+    <div class="hero-shade"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="https://www.svfhomes.in/" target="_blank" rel="noopener noreferrer" aria-label="Open SVF Homes official website">
+      <img src="images/logo.png" alt="SVF Homes logo">
+      <span class="brand-divider"></span>
+      <span class="brand-project">Royal &amp; Orchid <b>✿</b><small>T A M B A R A M</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    <nav id="mainNav">
+      <a class="active" href="#home">HOME</a>
+      <a href="#about" data-open="aboutModal">ABOUT</a>
+      <a href="#highlights" data-open="highlightsModal">HIGHLIGHTS</a>
+      <a href="#amenities" data-open="amenitiesModal">AMENITIES</a>
+      <a href="#gallery" data-open="galleryModal">GALLERY</a>
+      <a href="#floor" data-open="floorModal">FLOOR PLANS</a>
+      <a href="#location" data-open="locationModal">LOCATION</a>
+    </nav>
+  </header>
+
+  <main class="hero" id="home">
+    <section class="copy">
+      <div class="eyebrow"><span></span> PREMIUM APARTMENTS</div>
+      <h1><em>SVF</em> Royal &amp; Orchid</h1>
+      <h2>Premium Living in Tambaram, Chennai</h2>
+      <p>Modern homes designed for a better tomorrow.</p>
+      <div class="tagline">Comfort <b>|</b> Connectivity <b>|</b> Community</div>
+      <div class="hero-buttons">
+        <button class="btn gold" data-open="highlightsModal">Explore Property <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn outline" id="enquireBtn" type="button"><i class="fa-solid fa-envelope"></i> Enquire Now</button>
+      </div>
+    </section>
+  </main>
+
+  <aside class="login-card" id="customerLoginCard">
+    <a class="big-logo" href="https://www.svfhomes.in/" target="_blank" rel="noopener noreferrer" aria-label="Open SVF Homes official website"><img src="images/logo.png" alt="SVF Homes"></a>
+
+    <div id="loginView">
+      <h3>Login</h3>
+      <form id="loginCardForm">
+        <label class="field"><i class="fa-regular fa-envelope"></i><input id="loginContact" type="text" placeholder="Email / Phone Number" required></label>
+        <button class="card-login" type="submit">Login <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+
+    <div class="card-message" id="cardMessage"></div>
+  </aside>
+
+  <!-- Left-side project information trigger -->
+  <div class="side-info-corner">
+    <button class="info-corner-btn" id="sqTrigger" type="button" aria-label="Project Information">
+      <i class="fa-solid fa-face-smile"></i>
+      <span>INFO</span>
+    </button>
+    <div class="info-corner-popup" id="sqPanel" aria-hidden="true">
+      <button class="info-corner-close" id="sqClose" type="button" aria-label="Close">&times;</button>
+      <span class="info-tag"><i class="fa-solid fa-gem"></i> Premium Living</span>
+      <h3>Find Your<br><strong>Dream Flats</strong></h3>
+      <div class="info-line"></div>
+      <p><i class="fa-solid fa-location-dot"></i> Tambaram, Chennai</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> 3 BHK Starting ₹65 Lakhs</li>
+        <li><i class="fa-solid fa-circle-check"></i> 100% Vaastu Compliant</li>
+        <li><i class="fa-solid fa-circle-check"></i> Metro Water &amp; 3-Phase Power</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right-actions">
+    <button class="round-action" id="waBtn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></button>
+    <button class="round-action" id="callBtn" aria-label="Call"><i class="fa-solid fa-phone"></i></button>
+    <button class="round-action" id="mailBtn" aria-label="Email"><i class="fa-solid fa-envelope"></i></button>
+  </div>
+
+  <div class="bottom-promo">
+    <div class="dream" id="dreamBtn"><span>Your Dream Home</span><span>Awaits</span></div>
+    <div class="features">
+      <div><i class="fa-solid fa-house"></i><span>Spacious<small>2 &amp; 3 BHK Homes</small></span></div>
+      <div><i class="fa-solid fa-shield-halved"></i><span>24/7 Security<small>with CCTV</small></span></div>
+      <div><i class="fa-solid fa-car"></i><span>Ample Parking<small>Space</small></span></div>
+      <div><i class="fa-solid fa-leaf"></i><span>Green &amp; Peaceful<small>Environment</small></span></div>
+      <div><i class="fa-solid fa-location-dot"></i><span>Prime Location<small>Tambaram, Chennai</small></span></div>
+    </div>
+  </div>
+
+  <button class="help-card" id="helpCard" type="button"><span class="avatar"><i class="fa-solid fa-user"></i><b></b></span><span><strong>Need Help?</strong><small>Chat with us</small></span><i class="fa-solid fa-xmark"></i></button>
+
+  <div class="chatbot-panel" id="chatbotPanel" aria-hidden="true">
+    <div class="chatbot-head">
+      <div><span class="chat-online"></span><strong>SVF Homes Assistant</strong><small>Usually replies instantly</small></div>
+      <button id="chatbotClose" type="button" aria-label="Close chat">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="chat-msg bot">Hello! Welcome to SVF Homes. How can I help you today?</div>
+    </div>
+    <div class="chat-quick">
+      <button type="button" data-chat="pricing">Pricing</button>
+      <button type="button" data-chat="visit">Site Visit</button>
+      <button type="button" data-chat="location">Location</button>
+      <button type="button" data-chat="enquiry">Enquiry</button>
+    </div>
+    <form class="chatbot-input" id="chatbotForm">
+      <input id="chatbotInput" type="text" placeholder="Type your message..." autocomplete="off">
+      <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <div class="contact-popover" id="contactPopover" aria-hidden="true">
+    <button class="contact-close" id="contactClose" type="button" aria-label="Close">&times;</button>
+    <h4 id="contactTitle">Contact SVF Homes</h4>
+    <p id="contactText">Choose an option to contact us.</p>
+    <div class="contact-links" id="contactLinks"></div>
+  </div>
+</div>
+
+</div>
+
+
+
+  <!-- ══════════════════════════════════════════
+       MODALS
+  ══════════════════════════════════════════ -->
+
+  <!-- ABOUT -->
+  <div id="aboutModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="About Us">
+    <div class="hm-box">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <div class="hm-body about-body">
+        <div class="hm-text">
+          <h2>About SVF</h2>
+          <p>At Sri Vinayaga Foundation, we don't just build houses — we create homes with care and honesty. Based in Chennai, we have <strong>17+ years</strong> of experience, the trust of <strong>400+ happy clients</strong>, and delivered <strong>4 Lakhs+ sq ft</strong>. Our goal is to give families safe, strong, and comfortable homes that last for generations.</p>
+          <div class="about-stats">
+            <div class="stat"><span>17+</span><p>Years Experience</p></div>
+            <div class="stat"><span>400+</span><p>Happy Clients</p></div>
+            <div class="stat"><span>4L+</span><p>Sq Ft Delivered</p></div>
+          </div>
+        </div>
+        <div class="hm-img">
+          <img src="images/Family_Vector_Style_Alternative.png" alt="Happy family">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIGHLIGHTS -->
+  <div id="highlightsModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Highlights">
+    <div class="hm-box">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Highlights</h2>
+      <div class="hm-body highlights-body">
+        <div class="highlight-card">
+          <h3><i class="fas fa-home"></i> Project Highlights</h3>
+          <ul>
+            <li>100% Vaastu Compliant Homes</li>
+            <li>Modern Architecture &amp; Design</li>
+            <li>Spacious Apartments with Natural Light</li>
+            <li>Prime Location — Schools, Hospitals &amp; Shopping nearby</li>
+            <li>Premium Quality Construction with Trusted Materials</li>
+          </ul>
+        </div>
+        <div class="highlight-card">
+          <h3><i class="fas fa-map-marker-alt"></i> Location Highlights</h3>
+          <ul>
+            <li>Minutes from Chaitaniya CBSE School</li>
+            <li>Close to Annai Arul Hospital</li>
+            <li>Near Canara Bank</li>
+            <li>Near Nattarasan Dining Hall &amp; Padmavathi Marriage Hall</li>
+            <li>Conveniently located near Tambaram Railway Station</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECIFICATIONS -->
+  <div id="specificationsModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Specifications">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Specifications</h2>
+      <div class="spec-grid">
+        <div class="spec-card">
+          <img src="images/wall_finishing.jpg" alt="Wall Finish" class="zoomable">
+          <div class="spec-info">
+            <h3>Wall Finish</h3>
+            <p><strong>Exterior:</strong> Strong weatherproof coating.</p>
+            <p><strong>Interior:</strong> Smooth silk-finish paint for a classy look.</p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <img src="images/flooring_design.jpg" alt="Flooring" class="zoomable">
+          <div class="spec-info">
+            <h3>Flooring</h3>
+            <p><strong>Living &amp; Bedrooms:</strong> Imported marble.</p>
+            <p><strong>Balconies:</strong> Anti-slip tiles.</p>
+            <p><strong>Bathrooms:</strong> Durable long-lasting tiles.</p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <img src="images/Kitchen.jpg" alt="Kitchen" class="zoomable">
+          <div class="spec-info">
+            <h3>Kitchen</h3>
+            <p><strong>Appliances:</strong> Hob, chimney, microwave &amp; oven.</p>
+            <p><strong>Utility:</strong> Granite counters for strength.</p>
+            <p><strong>Wall:</strong> Designer tiles up to 3 ft.</p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <img src="images/bathroom.jpg" alt="Bathroom" class="zoomable">
+          <div class="spec-info">
+            <h3>Bathroom</h3>
+            <p><strong>Shower:</strong> Glass cubicles for a modern look.</p>
+            <p><strong>Areas:</strong> Clear wet/dry partitions for hygiene.</p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <img src="images/Modern_Balcony.jpg" alt="Balcony" class="zoomable">
+          <div class="spec-info">
+            <h3>Balcony</h3>
+            <p><strong>Tiles:</strong> Anti-slip flooring for safety.</p>
+            <p><strong>Design:</strong> Glass railings for an open feel.</p>
+          </div>
+        </div>
+        <div class="spec-card">
+          <img src="images/door-and-window.jpg" alt="Doors & Windows" class="zoomable">
+          <div class="spec-info">
+            <h3>Doors &amp; Windows</h3>
+            <p><strong>Main Door:</strong> Teakwood with digital lock.</p>
+            <p><strong>Bedroom:</strong> Teak veneer doors.</p>
+            <p><strong>Windows:</strong> UPVC for peace &amp; energy saving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMENITIES -->
+  <div id="amenitiesModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Amenities">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Amenities</h2>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <img src="images/Modern_Elevator.jpg" alt="Elevator" class="zoomable">
+          <p>Smooth &amp; Convenient Lift Access</p>
+        </div>
+        <div class="amenity-card">
+          <img src="images/Security_Feature.jpg" alt="Security" class="zoomable">
+          <p>24/7 CCTV &amp; Security Guards</p>
+        </div>
+        <div class="amenity-card">
+          <img src="images/outdoor-space.jpg" alt="Terrace" class="zoomable">
+          <p>Shared Terrace and Balcony</p>
+        </div>
+        <div class="amenity-card">
+          <img src="images/Standard_Parking.jpg" alt="Parking" class="zoomable">
+          <p>Stress-Free Parking Facility</p>
+        </div>
+        <div class="amenity-card">
+          <img src="images/Chennai_Metro_Water_Connection.png" alt="Water" class="zoomable">
+          <p>Clear Metro Water Supply</p>
+        </div>
+        <div class="amenity-card">
+          <img src="images/Electrical_Connection.jpg" alt="Electricity" class="zoomable">
+          <p>Reliable 3-Phase Electricity</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOOR PLAN -->
+  <div id="floorModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Floor Plan">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Floor Plan</h2>
+      <div class="floor-grid">
+        <img src="images/floor-plan1.jpg" alt="Floor Plan 1" class="floorPlanImg">
+        <img src="images/floor-plan2.jpg" alt="Floor Plan 2" class="floorPlanImg">
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div id="galleryModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Video Gallery">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Model Flats Video Gallery</h2>
+      <div class="gallery-grid">
+        <div class="video-card">
+          <a href="#" class="open-video-modal" data-video="videos/model-video1.mp4">
+            <img src="images/video-thumbnail1.png" alt="Model Flat Video 1">
+            <span class="play-overlay"><i class="fas fa-play-circle"></i></span>
+          </a>
+        </div>
+        <div class="video-card">
+          <a href="#" class="open-video-modal" data-video="videos/model-video2.mp4">
+            <img src="images/video-thumbnail2.png" alt="Model Flat Video 2">
+            <span class="play-overlay"><i class="fas fa-play-circle"></i></span>
+          </a>
+        </div>
+        <div class="video-card">
+          <a href="#" class="open-video-modal" data-video="videos/model-video3.mp4">
+            <img src="images/video-thumbnail3.png" alt="Model Flat Video 3">
+            <span class="play-overlay"><i class="fas fa-play-circle"></i></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURRENT STATUS -->
+  <div id="statusModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Current Status">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Current Status</h2>
+      <div class="status-grid">
+        <img src="images/current1.jpeg" alt="Construction status 1" class="zoomable">
+        <img src="images/current3.jpeg" alt="Construction status 3" class="zoomable">
+        <img src="images/current4.jpeg" alt="Construction status 4" class="zoomable">
+      </div>
+    </div>
+  </div>
+
+  <!-- LOCATION -->
+  <div id="locationModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Location">
+    <div class="hm-box hm-wide">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title"><i class="fas fa-map-marker-alt"></i> Location</h2>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.7319149547525!2d80.08514657507565!3d12.924944287386124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU1JzI5LjgiTiA4MMKwMDUnMTUuOCJF!5e0!3m2!1sen!2sin!4v1759150323227!5m2!1sen!2sin"
+          width="100%" height="380" style="border:0;border-radius:10px;"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="location-quick-links" aria-label="Nearby location options">
+        <a class="location-quick-card" href="https://www.google.com/maps/search/?api=1&query=Tambaram+Railway+Station" target="_blank" rel="noopener">
+          <i class="fa-solid fa-train-subway"></i><span><strong>Tambaram Railway Station</strong><small>View route &amp; directions</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="location-quick-card" href="https://www.google.com/maps/search/?api=1&query=schools+near+Tambaram+Chennai" target="_blank" rel="noopener">
+          <i class="fa-solid fa-school"></i><span><strong>Nearby Schools</strong><small>Find schools around the project</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="location-quick-card" href="https://www.google.com/maps/search/?api=1&query=hospitals+near+Tambaram+Chennai" target="_blank" rel="noopener">
+          <i class="fa-solid fa-hospital"></i><span><strong>Nearby Hospitals</strong><small>Find hospitals nearby</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a class="location-quick-card" href="https://www.google.com/maps/search/?api=1&query=GST+Road+Tambaram+Chennai" target="_blank" rel="noopener">
+          <i class="fa-solid fa-road"></i><span><strong>GST Road</strong><small>Open road location</small></span><i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+      <div class="location-footer">
+        <div class="footer-contact-info">
+          <p><i class="fas fa-phone-alt"></i> +91 9444892265 &nbsp;|&nbsp; +91 7358528262</p>
+          <p><i class="fas fa-envelope"></i> svfhomes@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Office No. 03, Munusami Koil Street, Menambedu, Ambattur, Chennai-600 053</p>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16AZH16Jmx/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/svf_homes_ambattur/#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@svfhomes" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ENQUIRY -->
+  <div id="enquiryModal" class="hub-modal" role="dialog" aria-modal="true" aria-label="Enquire Now">
+    <div class="hm-box hm-narrow">
+      <button class="hm-close" aria-label="Close">&times;</button>
+      <h2 class="hm-title">Enquire Now</h2>
+      <form id="myForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" rows="3" placeholder="Your Message"></textarea>
+        <button type="submit" class="submit-btn">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- IMAGE ZOOM MODAL (for floor plans) -->
+  <div id="imgModal" class="img-modal">
+    <span class="img-modal-close" id="closeBtn">&times;</span>
+    <div class="img-modal-wrapper">
+      <img id="modalImg" src="" alt="Enlarged view">
+    </div>
+  </div>
+
+  <!-- VIDEO PLAYER MODAL -->
+  <div id="videoModal" class="video-modal-overlay">
+    <div class="video-modal-box">
+      <span class="video-modal-close" id="videoModalClose">&times;</span>
+      <video id="modalVideo" controls playsinline>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"SVF Homes Pvt Ltd","url":"https://www.svfhomes.in","logo":"https://www.svfhomes.in/images/logo.png","sameAs":["https://www.facebook.com/share/16AZH16Jmx/","https://www.instagram.com/svf_homes_ambattur/#","https://www.youtube.com/@svfhomes"]}
+  </script>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
